@@ -11,8 +11,14 @@ function App() {
     <>
       <Nav />
       <Routes>
-        <Route path="/" element={<Homepage />} />
-        <Route path="/:id/:date" element={<SecondPage />} />
+        <Route
+          path="https://micio-san.github.io/violagh/"
+          element={<Homepage />}
+        />
+        <Route
+          path="https://micio-san.github.io/violagh/:id/:date"
+          element={<SecondPage />}
+        />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
     </>
