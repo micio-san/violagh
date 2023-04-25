@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #F1EEF0;
+  font-family: "Quicksand", sans-serif;
+  height: 100vh;
+  background: #F1EEF0;
+}
+
+.navbar {
+  height: 84px;
+  width: 100%;
+  background: #0B0A0B;
+  padding: 0px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.navbar h3 {
+  text-transform: uppercase;
+  color: #993366;
+  font-size: 30px;
+}
+.navbar img {
+  height: 51px;
+  width: 165px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+main {
+  height: 90vh;
+  padding: 0px 50px;
+  padding-top: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 100%;
+}
+main .aside-menu_container {
+  flex: 0.5;
+}
+main .aside-menu_container .menu-aside {
+  width: 339px;
+}
+main .aside-menu_container .menu-aside .display {
+  height: 62px;
+  width: 100%;
+  background: #993366;
+  padding: 0px 2px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+main .aside-menu_container .menu-aside .display .display-farmacia_nome {
+  color: #F1EEF0;
+  text-transform: capitalize;
+}
+main .aside-menu_container .menu-aside .display .icon-container {
+  cursor: pointer;
+  height: 62px;
+  width: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+main .aside-menu_container .menu-aside .display .icon-container .menu-icon {
+  font-size: 30px;
+  color: #F1EEF0;
+  transform: rotate(0deg);
+  transition: 0.5s ease-in-out;
+  transition-property: transform;
+}
+main .aside-menu_container .menu-aside .display .icon-container .menu-icon.menu-icon_active {
+  transform: rotate(180deg);
+}
+main .aside-menu_container .menu-aside .list-container {
+  height: 0px;
+  width: 100%;
+  background: rgba(255, 0, 0, 0.107);
+  border: 2px solid #993366;
+  transition: 0.5s ease-in-out;
+  transition-property: height;
+}
+main .aside-menu_container .menu-aside .list-container_active {
+  height: 486px;
+}
+main .aside-menu_container .menu-aside .list-container .pharma-list_item {
+  background: #B3668C;
+  height: 46px;
+  color: #F1EEF0;
+  line-height: 46px;
+  cursor: pointer;
+}
+main .graph-container {
+  height: 100%;
+  flex: 2;
+  background: rgba(0, 0, 255, 0.217);
+}/*# sourceMappingURL=App.css.map */
