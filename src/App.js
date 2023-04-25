@@ -12,7 +12,7 @@ function App() {
       <Nav />
       <Routes>
         <Route
-          path="https://micio-san.github.io/violagh/"
+          path="https://micio-san.github.io/violagh/Home"
           element={<Homepage />}
         />
         <Route
