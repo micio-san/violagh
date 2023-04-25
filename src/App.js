@@ -11,11 +11,7 @@ function App() {
     <>
       <Nav />
       <Routes>
-        <Route
-          exact
-          path="https://micio-san.github.io/violagh/"
-          element={<Homepage />}
-        />
+        <Route exact path="/" element={<Homepage />} />
         <Route path="/:id/:date" element={<SecondPage />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
