@@ -12,6 +12,7 @@ function App() {
       <Nav />
       <Routes>
         <Route
+          exact
           path="https://micio-san.github.io/violagh/"
           element={<Homepage />}
         />
