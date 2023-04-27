@@ -8,7 +8,7 @@ function Realtime() {
 
     const fetchRealtime = async () => {
         try {
-            const dati = await fetch("https://viola-counter.herokuapp.com/api/realtime-traffics");
+            const dati = await fetch("https://viola-counter.herokuapp.com/api/realtime-traffics?pageCount");
             const dataParsed = await dati.json();
             const dataSorted = await dataParsed.data.sort((a, b) => b.id - a.id)
             const removeMore15 = dataSorted.filter((item) => {
